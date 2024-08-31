@@ -88,7 +88,7 @@ const About = () => {
           
             </h1>
             <p className=" tw-text-black  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
-            To provide a trusted plateform Where Troubled hearts can access lifeline and comfort from people who survived the same depression,anxiety, and suicidal struggle in life. </p>
+            To provide a trusted platform Where Troubled hearts can access lifeline and comfort from people who survived the same depression,anxiety, and suicidal struggle in life. </p>
         
            
             </div>
