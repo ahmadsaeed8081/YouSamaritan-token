@@ -650,10 +650,10 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                   </span>
                 </td>
                 <td     onClick={()=>openModal(1)}  className="align-middle  cursor-pointer text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span  className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
-                  {!isDisconnected? props.refEarning ? (Number(props.refEarning[0])/10**18).toFixed(2): 0 : 0}
-
-                  </span>
+                  <button style={{ color:"#269FF0" }}  className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  {!isDisconnected? props.refEarning ? (Number(props.refEarning[0])/10**18).toFixed(2) : 0 : 0}
+                   
+                  </button>
                 </td>
               </tr>
               <tr className="bg-white border-t rounded-md">
@@ -674,10 +674,10 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                   </span>
                 </td>
                 <td onClick={()=>openModal(2)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button style={{ color:"#269FF0" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {!isDisconnected?props.refEarning ? (Number(props.refEarning[1])/10**18).toFixed(2): 0 :0 }
 
-                  </span>
+                  </button>
                 </td>
               </tr>
               <tr className="bg-white border-t rounded-md">
@@ -698,10 +698,10 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                   </span>
                 </td>
                 <td     onClick={()=>openModal(3)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button style={{ color:"#269FF0" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {!isDisconnected? props.refEarning ? (Number(props.refEarning[2])/10**18).toFixed(2): 0:0 }
 
-                  </span>
+                  </button>
                 </td>
               </tr>
 
@@ -723,10 +723,10 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                   </span>
                 </td>
                 <td     onClick={()=>openModal(4)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {props.Cso_Earning ? (Number(props.Cso_Earning)/10**18).toFixed(2): 0 }
 
-                  </span>
+                  </button>
                 </td>
               </tr>
 :null
@@ -750,10 +750,10 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                   </span>
                 </td>
                 <td onClick={()=>openModal(5)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {props.Emb_Earning ? (Number(props.Emb_Earning)/10**18).toFixed(2): 0 }
-
-                  </span>
+                    
+                  </button>
                 </td>
               </tr>
 :null

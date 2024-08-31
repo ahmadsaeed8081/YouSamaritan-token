@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 import Modal from "../../components/myModal/Modal";
 import { useSwitchChain, useAccount, useDisconnect } from "wagmi";
 import moment from "moment";
-
+import { Link } from "react-router-dom";
 const HeroPopup = ({previous_earning, data, isModalOpen, setIsModalOpen, closeModal }) => {
 
   const { address, isConnecting ,isDisconnected} = useAccount()
@@ -124,11 +124,19 @@ const HeroPopup = ({previous_earning, data, isModalOpen, setIsModalOpen, closeMo
                 {Number(index)+1}
               </span>
             </td>
+            
             <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
               <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
+                          <Link to={"https://polygonscan.com/address/" + item[0]} target="_blank">
+
               {item[0].slice(0,4)+"..."+item[0].slice(39,42)}
+                          </Link>
+
               </span>
             </td>
+
+
+
             <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
               <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
               {Number(item[1])/10**18} DAI

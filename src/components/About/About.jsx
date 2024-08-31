@@ -24,7 +24,7 @@ const About = () => {
           
             </h1>
             <p className=" tw-text-black  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
-            YouSamaritan is the first and only plateform that enables users to transform passion into compassion. The platform leverages the advantages of blockchain technology, such as immutability, transparency, and security, to create a more efficient and secure way to advice and make confession. Learn about this philanthropic and altruistic project.       </p>
+            YouSamaritan is the first and only platform that enables users to transform passion into compassion. The platform leverages the advantages of blockchain technology, such as immutability, transparency, and security, to create a more efficient and secure way to advice and make confession. Learn about this philanthropic and altruistic project.       </p>
         
            
             <div className=' tw-flex tw-flex-wrap    sm:tw-justify-start tw-justify-center tw-w-full sm:tw-gap-6 tw-gap-3 tw-items-center'>
