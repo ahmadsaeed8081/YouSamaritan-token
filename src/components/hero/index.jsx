@@ -438,7 +438,7 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
 
                       <span className="tw-text-[#456DA7] sm:tw-text-base tw-text-[12px]  tw-flex tw-items-center tw-gap-2  m-0">REF LINK  
                       <CopyToClipboard
-                        text={`https://samaritan1.vercel.app/?ref=${address? address:""}`}
+                        text={`${window.location.host}/?ref=${address? address:""}`}
                       >
                       <PiCopyLight onClick={link_notify}  color="#456DA7" />
                         </CopyToClipboard>
