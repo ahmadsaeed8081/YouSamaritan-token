@@ -443,7 +443,7 @@ GET SAMARITAN <FaArrowRight color="#456DA7" />
                       <PiCopyLight onClick={link_notify}  color="#456DA7" />
                         </CopyToClipboard>
                         </span>
-                        <p className=" m-0 sm:tw-text-base tw-text-[10px] tw-text-[#456DA7]">https://samaritan1.vercel.app/?ref={address? address.slice(0,3)+"..."+address.slice(39,42):""}</p>
+                        <p className=" m-0 sm:tw-text-base tw-text-[10px] tw-text-[#456DA7]">{window.location.host}/?ref={address? address.slice(0,3)+"..."+address.slice(39,42):""}</p>
 
                     </div>
 
