@@ -256,6 +256,10 @@ const Hero = (props) => {
       alert("Kidly write the amount");
       return;
     }
+    if (ref_add == "0x0000000000000000000000000000000000000000" && props.upliner=="0x0000000000000000000000000000000000000000"  ) {
+      alert("its a community project, kindly use referral link to purchase");
+      return;
+    }
 
     if (selectedCurrency=="MATIC" ) 
     {

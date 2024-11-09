@@ -56,8 +56,9 @@ function App() {
   const [min_stake, set_min_stake] = useState(0);
   const [min_purchase, set_minPurchase] = useState(0);
   const [minPurchase_matic, set_minPurchase_matic] = useState(0);
+  const [upliner, set_upliner] = useState(0);
 
-
+  
 
   const [curr_stage, set_curr_stage] = useState();
   const [curr_StageTime, set_curr_StageTime] = useState(0);
@@ -202,6 +203,7 @@ useEffect(()=>
 
        set_Cso_Earning(pre_user[3])
        set_Emb_Earning(pre_user[4])
+       set_upliner(pre_user[0])
 
     }
 
@@ -282,7 +284,7 @@ useEffect(()=>
   return (
     <div className=''>
      <Routes>
-      <Route path='/'  element={<Home previous_earning1={previous_earning1} previous_earning2={previous_earning2} previous_earning3={previous_earning3} previous_earning4={previous_earning4} previous_earning5={previous_earning5} l1_statement={l1_statement} l2_statement={l2_statement} l3_statement={l3_statement} l4_statement={l4_statement} l5_statement={l5_statement} minPurchase_matic={minPurchase_matic} min_purchase={min_purchase} refEarning={refEarning} refCount={refCount} isEmb={isEmb} isCso={isCso} Emb_Earning={Emb_Earning} Cso_Earning={Cso_Earning} launch={launch} totalInvestment={totalInvestment} total_raised={total_raised}  NextStagePrice={NextStagePrice} test={test} MATICBalance={MATICBalance} EBMBalance={EBMBalance} USDTBalance={USDTBalance} curr_time={curr_time} curr_stage={curr_stage} curr_StageTime={curr_StageTime}  curr_presale={curr_presale} perTokenIn_Matic={perTokenIn_Matic} />}/>
+      <Route path='/'  element={<Home upliner={upliner} previous_earning1={previous_earning1} previous_earning2={previous_earning2} previous_earning3={previous_earning3} previous_earning4={previous_earning4} previous_earning5={previous_earning5} l1_statement={l1_statement} l2_statement={l2_statement} l3_statement={l3_statement} l4_statement={l4_statement} l5_statement={l5_statement} minPurchase_matic={minPurchase_matic} min_purchase={min_purchase} refEarning={refEarning} refCount={refCount} isEmb={isEmb} isCso={isCso} Emb_Earning={Emb_Earning} Cso_Earning={Cso_Earning} launch={launch} totalInvestment={totalInvestment} total_raised={total_raised}  NextStagePrice={NextStagePrice} test={test} MATICBalance={MATICBalance} EBMBalance={EBMBalance} USDTBalance={USDTBalance} curr_time={curr_time} curr_stage={curr_stage} curr_StageTime={curr_StageTime}  curr_presale={curr_presale} perTokenIn_Matic={perTokenIn_Matic} />}/>
       <Route path='/staking'  element={<Staking is_suspend={is_suspend} totalwithdraw={totalwithdraw} totalEarning={totalEarning} allInvestments_reward = {allInvestments_reward} totalInvestment={totalInvestment} EBMBalance={EBMBalance} curr_time={curr_time} min_stake={min_stake}  allInvestments={allInvestments}  test={test} />} />
      </Routes>
     </div>
