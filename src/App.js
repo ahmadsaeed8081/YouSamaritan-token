@@ -131,7 +131,6 @@ useEffect(()=>
        user = await staking_contract.methods.user(address).call();      
        allInvestments = await staking_contract.methods.getAll_investments().call({from: address});
        allInvestments_reward = await staking_contract.methods.getAll_investments_forReward().call({from: address});
-
        let ref_count = await presale_contract.methods.referralLevel_count(address).call();    
        let ref_earn = await presale_contract.methods.referralLevel_earning(address).call();    
        let pre_user = await presale_contract.methods.user(address).call();    
@@ -169,10 +168,23 @@ useEffect(()=>
 
 
        let previous_earning1 = await presale_contract.methods.get_previousEarning(address,0).call();    
+
        let previous_earning2 = await presale_contract.methods.get_previousEarning(address,1).call();    
+
        let previous_earning3 = await presale_contract.methods.get_previousEarning(address,2).call();    
-       let previous_earning4 = await presale_contract.methods.get_previousEarning(address,3).call();    
-       let previous_earning5 = await presale_contract.methods.get_previousEarning(address,4).call();    
+       let previous_earning4;
+       let previous_earning5;
+       try{
+         previous_earning4 = await presale_contract.methods.get_previousEarning(address,3).call();    
+
+       }
+       catch(e)
+       {}
+      try{
+        previous_earning5 = await presale_contract.methods.get_previousEarning(address,4).call();    
+
+      }
+      catch{}
 
 
        set_previous_earning1(previous_earning1)
